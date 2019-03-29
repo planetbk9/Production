@@ -1,0 +1,80 @@
+@import 'styles/utils';
+
+.subject-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 8rem 0;
+  @include reponsiveScreen();
+  .subject-mention {
+    margin-bottom: 4rem;
+    @include getFontSize($bigfont-size);
+  }
+  .subject-input {
+    display: flex;
+    border: 1px solid $primary-color;
+    @media #{$wide-screen} {
+      width: 50%;
+    }
+    @media (min-width: 501px) and (max-width: 1024px) {
+      width: 80%;
+    }
+    @media (max-width: 500px) {
+      width: 100%;
+    }
+    .subject-input-text {
+      width: 100%;
+      color: gray;
+      background: rgba(244, 101, 105, 0.5);
+      border: none;
+      outline: none;
+      font-size: 1rem;
+      padding: 1rem;
+      padding-left: 1rem;
+    }
+    .subject-input-button {
+      width: 3rem;
+      background: rgba(244, 101, 105, 0.5);
+      border: none;
+      border-left: 1px solid $secondary-color;
+      outline: none;
+      padding: 0.5rem;
+      cursor: pointer;
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+  .subject-item-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin-top: 2rem;
+    @media #{$wide-screen} {
+      width: 50%;
+    }
+    @media (min-width: 501px) and (max-width: 1024px) {
+      width: 80%;
+    }
+    @media (max-width: 500px) {
+      width: 100%;
+    }
+    .subject-item {
+      padding: 0.5rem;
+      background: rgba(0,0,0,0);
+      border: 1px solid $primary-color;
+      border-radius: 1rem;
+      outline: none;
+      font-size: 1rem;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+      &:hover {
+        @extend %item-hover;
+      }
+    }
+  }
+}

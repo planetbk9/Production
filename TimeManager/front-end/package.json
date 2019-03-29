@@ -1,0 +1,40 @@
+{
+  "name": "time-manager",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "core-js": "^3.0.0",
+    "mongoose": "^5.4.6",
+    "node-sass": "^4.11.0",
+    "open-color": "^1.6.3",
+    "react": "^16.7.0",
+    "react-app-polyfill": "^0.2.2",
+    "react-datepicker": "^2.1.0",
+    "react-dom": "^16.7.0",
+    "react-modal": "^3.8.1",
+    "react-redux": "^6.0.0",
+    "react-scripts": "2.1.3",
+    "redux": "^4.0.1",
+    "redux-actions": "^2.6.4",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "sass-loader": "^7.1.0"
+  },
+  "scripts": {
+    "start": "PORT=9011 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "stop": "fuser -k -n tcp 9011"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
