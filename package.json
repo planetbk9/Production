@@ -2,9 +2,11 @@
   "name": "time-manager",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://planetbk9.github.io/Production",
   "dependencies": {
     "axios": "^0.18.0",
     "core-js": "^3.0.0",
+    "gh-pages": "^2.0.1",
     "mongoose": "^5.4.6",
     "node-sass": "^4.11.0",
     "open-color": "^1.6.3",
@@ -22,11 +24,13 @@
     "sass-loader": "^7.1.0"
   },
   "scripts": {
-    "start": "PORT=9011 react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject",
-    "stop": "fuser -k -n tcp 9011"
+    "stop": "fuser -k -n tcp"
   },
   "eslintConfig": {
     "extends": "react-app"
